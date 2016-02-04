@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "nvIt",
+  "name": "Send to nvALT",
   "version": "1.0",
-  "description": "Send pages to nvALT via toolbar, context menu, or other tricks. Requires Chrome 10 or higher, OS X, and nvALT 2.1 or higher.",
+  "description": "Send pages to nvALT via toolbar, context menu, or other tricks. Requires OS X and nvALT 2.1+.",
   "permissions": [
     "tabs",
     "contextMenus"

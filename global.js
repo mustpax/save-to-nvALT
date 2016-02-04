@@ -18,14 +18,7 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
 });
 
 function prepareLinkUrl(aLink) {
-	var mobIt = localStorage["mobilizeIt"];
-	var theURL = aLink;
-	if ((mobIt == "true") && (theURL.indexOf("instapaper") == -1)) {
-		theURL = escape(theURL);
-		theURL = "http://www.instapaper.com/m?u=" + theURL;
-	}
-	theURL = encodeURIComponent(theURL);
-	return theURL;
+	return encodeURIComponent(aLink);
 }
 
 chrome.browserAction.onClicked.addListener(function(theTab) {

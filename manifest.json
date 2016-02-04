@@ -19,6 +19,5 @@
   "background": {
     "scripts": ["global.js"]
   },
-  "minimum_chrome_version": "14.0",
-  "options_page": "optionsPage.html"
+  "minimum_chrome_version": "14.0"
 }

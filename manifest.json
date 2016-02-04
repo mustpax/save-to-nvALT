@@ -4,8 +4,8 @@
   "version": "1.0",
   "description": "Send pages to nvALT via toolbar, context menu, or other tricks. Requires OS X and nvALT 2.1+.",
   "permissions": [
-    "tabs",
-    "contextMenus"
+    "contextMenus",
+    "activeTab"
   ],
   "browser_action": {
     "default_icon": "icon19.png",
@@ -18,14 +18,6 @@
   "background": {
     "scripts": ["global.js"]
   },
-  "content_scripts": [
-    {
-      "exclude_globs": [],
-      "include_globs": [ "*" ],
-      "js": [ "nvSender.js" ],
-      "matches": [ "http://*/*", "https://*/*" ]
-    }
-  ],
   "minimum_chrome_version": "14.0",
   "options_page": "optionsPage.html"
 }

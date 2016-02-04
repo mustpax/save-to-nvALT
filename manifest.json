@@ -11,10 +11,11 @@
     "default_icon": "icon19.png",
     "default_title": "nvIt"
   },
-  "icons": { 
-			"16":"icon16.png",
-			"48": "icon48.png",
-          "128": "icon128.png" },
+  "icons": {
+    "16":"icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
   "background": {
     "scripts": ["global.js"]
   },

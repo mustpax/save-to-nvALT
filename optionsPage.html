@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>nvIt Options</title>
+    <script type="text/javascript">
+
+	// Saves options to localStorage.
+	function save_options() {
+		
+		var select = document.getElementById("mobilize_it");
+		if(select.checked==true){
+			localStorage["mobilizeIt"]="true";
+		}else{
+			localStorage["mobilizeIt"]="false";		
+		}
+	}
+
+	// Restores select box state to saved value from localStorage.
+	function restore_options() {
+		
+		var select = document.getElementById("mobilize_it");
+		var mobIt = localStorage["mobilizeIt"];	
+		if(mobIt=="true"){
+			select.checked=true;
+		}else{
+			select.checked=false;		
+		}	  
+	}
+	</script>
+	
+  </head>
+<body onload="restore_options()">
+  <div class="container wrapper">
+    <h1 class="title">nvIt Preferences</h1>
+
+    <form class="mobilizer" action="#" method="post">
+
+      <fieldset class="container set">
+        <legend>Readability</legend>
+        <div class="container pad">
+            <div class="column label">
+            </div>
+            <div class="column">
+              <input type="checkbox" name="ipIt" onclick="save_options()" id="mobilize_it"/>Use Instapaper Mobilizer for imported links.<br />
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <div class="container footer">
+      <p>
+        by <a href="http://elasticthreads.tumblr.com">ElasticThreads</a>
+        |
+        <a href="http://twitter.com/elasticthreads">Twitter</a>
+        |
+        <a href="http://notational.net">Notational Velocity</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

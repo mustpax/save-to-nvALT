@@ -1,0 +1,27 @@
+{
+  "name": "nvIt",
+  "version": "0.925",
+  "description": "Send pages to nvALT via toolbar, context menu, or other tricks. Requires Chrome 10 or higher, OS X, and nvALT 2.1 or higher.",
+  "permissions": [
+    "tabs",
+    "contextMenus"
+  ],
+  "browser_action": {
+    "default_icon": "icon19.png",
+    "default_title": "nvIt"
+  },
+  "icons": { 
+			"16":"icon16.png",
+			"48": "icon48.png",
+          "128": "icon128.png" },
+  "background_page": "backgrPage.html",
+   "content_scripts": [ {
+      "exclude_globs": [  ],
+      "include_globs": [ "*" ],
+      "js": [ "nvSender.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+  "minimum_chrome_version": "14.0",
+  "options_page": "optionsPage.html",
+  "update_url": "http://sites.google.com/site/xtrathreads/ChromeExtensionsManifest.xml"
+}

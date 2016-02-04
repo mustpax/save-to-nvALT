@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Send to nvALT",
   "version": "1.0",
-  "description": "Send pages to nvALT via toolbar, context menu, or other tricks. Requires OS X and nvALT 2.1+.",
+  "description": "Send pages to nvALT via toolbar or context menu. Requires OS X and nvALT 2.1+.",
   "permissions": [
     "contextMenus",
     "activeTab"

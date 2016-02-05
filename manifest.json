@@ -17,7 +17,7 @@
     "128": "icon128.png"
   },
   "background": {
-    "scripts": ["global.js"]
+    "scripts": ["build.js"]
   },
   "minimum_chrome_version": "14.0"
 }

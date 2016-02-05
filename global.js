@@ -1,8 +1,23 @@
 (function() {
-  "use strict";
   // TODO collapse newlines for selections
+  "use strict";
+
+  var read = require("node-read");
+
+  function getHtml(tab, cb) {
+    chrome.tabs.executeScript(null, 
+        {code: "document.documentElement.innerHTML"},
+        cb);
+  }
+
   function savePage(tab) {
-    saveToNv({url : tab.url, title: tab.title});
+    getHtml(tab, function(html) {
+      read(html[0], function(err, article, meta) {
+        if (! err) {
+          saveToNv({title: article.title, txt: article.content});
+        }
+      });
+    });
   }
 
   function saveToNv(params) {

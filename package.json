@@ -1,0 +1,20 @@
+{
+  "name": "save-to-nvALT",
+  "license": "MIT",
+  "version": "1.0.0",
+  "author": "Mustafa Paksoy",
+  "description": "Chrome extension for saving to nvALT via toolbar or context menu. Requires OS X and nvALT 2.1+.",
+  "scripts" : {
+    "build": "browserify -o build.js global.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mustpax/save-to-nvALT.git"
+  },
+  "dependencies": {
+    "node-read": "0.1.x"
+  },
+  "devDependencies": {
+    "browserify": "13.0.x"
+  }
+}

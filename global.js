@@ -24,13 +24,8 @@
     return encodeURIComponent(aLink);
   }
 
-  chrome.browserAction.onClicked.addListener(function(theTab) {
-    var theLink = new Object();
-    var theURL = prepareLinkUrl(theTab.url);
-    theLink.url = "nvalt://make/?url=" + theURL + "&title=" + encodeURIComponent(theTab.title);
-    theLink.tab = theTab.id;
-    handle_message(theLink);
-    sendResponse({});
+  chrome.browserAction.onClicked.addListener(function(tab) {
+    saveToNv({url : tab.url, title: tab.title});
   });
 
   function clickstaPage(info, tab) {

@@ -109,5 +109,14 @@
     props.url = lnx.url;
     /*	alert(props.url);*/
     chrome.tabs.update(lnx.tab, props);
+
+  function saveToNv(params) {
+    var base = "nvalt://make/";
+    var paramStr = Object.keys(params).map(function(k) {
+      var v = params[k];
+      return [encodeURIComponent(k), encodeURIComponent(v)].join('=');
+    }).join("&");
+    var url = [base, paramStr].join('?');
+    chrome.tabs.update(null, {url: url});
   }
 })();

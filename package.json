@@ -12,7 +12,8 @@
     "url": "git://github.com/mustpax/save-to-nvALT.git"
   },
   "dependencies": {
-    "node-read": "0.1.x"
+    "node-read": "0.1.x",
+    "to-markdown": "2.0.x"
   },
   "devDependencies": {
     "browserify": "13.0.x"

@@ -3,6 +3,7 @@
   "use strict";
 
   var read = require("node-read");
+  var toMarkdown = require('to-markdown');
 
   function getHtml(tab, cb) {
     chrome.tabs.executeScript(null, 
@@ -14,7 +15,7 @@
     getHtml(tab, function(html) {
       read(html[0], function(err, article, meta) {
         if (! err) {
-          saveToNv({title: article.title, txt: article.content});
+          saveToNv({title: article.title, txt: toMarkdown(article.content)});
         }
       });
     });

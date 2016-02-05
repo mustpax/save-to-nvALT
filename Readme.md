@@ -1,8 +1,21 @@
 # Chrome Plugin: Send to nvALT
 
-**Save to nvALT** lets you save web pages as [nvALT][nvalt] notes. 
+**Save to nvALT** lets you save snippets and pages to [nvALT][nvalt]. [nvALT][nvalt] is a note taking application for Mac OS X.
 
-[nvALT][nvalt] is an improved version of the original [Notational Velocity][nv]. It is developed by [David Halter][david] and [Brett Terpstra][brett].
+To use **Save to nvALT** you have to first install nvALT.
+
+## How To Use
+
+Clicking on the extension button saves the whole page as a note. You can also
+do this by right clicking on the page and picking "Save note with page."
+
+You can save snippets by selecting text and picking "Save note with selected
+text" from the right click menu.
+
+## About nvALT
+
+[nvALT][nvalt] is an improved version of the original [Notational Velocity][nv].
+It is developed by [David Halter][david] and [Brett Terpstra][brett].
 
 # Credits
 

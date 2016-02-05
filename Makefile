@@ -7,6 +7,10 @@ deps:
 	npm install
 
 clean:
-	rm build.js
+	-rm build.js pack.zip
 
-.PHONY: deps clean
+pack: clean all
+	zip pack.zip build.js *.png manifest.json
+	du -h pack.zip
+
+.PHONY: deps clean pack

@@ -11,6 +11,14 @@
         cb);
   }
 
+  // from http://stackoverflow.com/questions/2808368/decode-html-entities-in-javascript
+  function htmlDecode(input){
+    var e = document.createElement('div');
+    e.innerHTML = input;
+    return e.childNodes[0].nodeValue;
+  }
+  
+
   function savePage(tab) {
     getHtml(tab, function(html) {
       read(html[0], function(err, article, meta) {
@@ -46,7 +54,7 @@
             ]
           });
           saveToNv({
-            title: article.title,
+            title: htmlDecode(article.title),
             txt: 'Source: ' + tab.url + '\n\n' + markdown
           });
         }
@@ -81,7 +89,7 @@
     "contexts": ["selection"],
     "onclick": function(info, tab) {
       saveToNv({
-        title: tab.title,
+        title: htmlDecode(tab.title),
         txt: 'Source: '  + info.pageUrl + '\n\n' + info.selectionText
       });
     }

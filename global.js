@@ -32,7 +32,7 @@
               }
             },
             {
-              filter: ['span', 'font'],
+              filter: ['span', 'font', 'small'],
               replacement: function(c) {
                 return c;
               }

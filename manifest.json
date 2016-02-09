@@ -2,14 +2,14 @@
   "manifest_version": 2,
   "name": "Save to nvALT",
   "version": "1.0",
-  "description": "Save pages to nvALT via toolbar or context menu. Requires OS X and nvALT 2.1+.",
+  "description": "Save pages to nvALT.",
   "permissions": [
     "contextMenus",
     "activeTab"
   ],
   "browser_action": {
     "default_icon": "icon19.png",
-    "default_title": "Send to nvALT"
+    "default_title": "Save to nvALT"
   },
   "icons": {
     "16":"icon16.png",

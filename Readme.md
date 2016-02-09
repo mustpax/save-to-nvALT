@@ -1,29 +1,32 @@
-# Chrome Plugin: Send to nvALT
+# Chrome Extension: Save to nvALT
 
-**Save to nvALT** lets you save snippets and pages to [nvALT][nvalt]. [nvALT][nvalt] is a note taking application for Mac OS X.
+**Save to nvALT** saves pages from Chrome to nvALT.
 
-To use **Save to nvALT** you have to first install nvALT.
+To use **Save to nvALT** you have to first [install nvALT][nvALT download].
 
-## How To Use
+## How do I use this?
 
-Clicking on the extension button saves the whole page as a note. You can also
+Click the extension button to save whole page as a note. You can also
 do this by right clicking on the page and picking "Save note with page."
+Pages are saved as [Markdown][markdown].
 
-You can save snippets by selecting text and picking "Save note with selected
-text" from the right click menu.
+If you want to save a section of the page, right click and pick "Save note with
+selected text".
 
-## About nvALT
+## What's nvALT?
 
-[nvALT][nvalt] is an improved version of the original [Notational Velocity][nv].
-It is developed by [David Halter][david] and [Brett Terpstra][brett].
+[nvALT][nvalt] is a note taking application for Mac OS X.  It is an improved
+version of the original [Notational Velocity][nv].
+
+nvALT is developed by [David Halter][david] and [Brett Terpstra][brett].
 
 # Credits
 
-**Save to nvALT** is based on [the original extension][orig] by [David Halter][david].
-
-[Awesome icon design][icon] by [Chris Griffith][chris].
-
-Favicon design by [nvALT authors][nvalt].
+* **Save to nvALT** is based on [the original extension by David Halter][orig].
+* Icon design by [Chris Griffith][chris]
+* Favicon design by [nvALT authors][nvalt]
+* Page content extraction logic by [node-read][] 
+* HTML to [Markdown][markdown] conversion by [to-markdown][]
 
 [orig]: http://elasticthreads.tumblr.com/post/8212672178/nvit-chrome-and-safari-extensions-for-nvalt
 [icon]: https://dribbble.com/shots/1958394-nvALT-Icon
@@ -32,3 +35,7 @@ Favicon design by [nvALT authors][nvalt].
 [nvalt]: http://brettterpstra.com/projects/nvalt/
 [brett]: http://brettterpstra.com/
 [nv]: http://notational.net/
+[markdown]: http://commonmark.org/help/
+[nvALT download]: http://brettterpstra.com/projects/nvalt/#dl
+[to-markdown]: https://github.com/domchristie/to-markdown
+[node-read]: https://github.com/bndr/node-read

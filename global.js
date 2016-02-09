@@ -77,17 +77,6 @@
   });
 
   chrome.contextMenus.create({
-    "title": "Save note with selected link",
-    "contexts": ["link"],
-    "onclick": function(info, tab) {
-      saveToNv({
-        title: info.selectionText,
-        url: info.linkUrl
-      });
-    }
-  });
-
-  chrome.contextMenus.create({
     "title": "Save note with selected text",
     "contexts": ["selection"],
     "onclick": function(info, tab) {

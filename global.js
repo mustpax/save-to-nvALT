@@ -19,14 +19,28 @@
             converters: [
             {
               filter: 'pre',
-              replacement: function(content) {
-                return '\n\n```\n' + content + '\n```\n\n';
+              replacement: function(c) {
+                return '\n\n```\n' + c + '\n```\n\n';
               }
             },
             {
-              filter: 'span',
-              replacement: function(content) {
-                return content;
+              filter: ['span', 'font'],
+              replacement: function(c) {
+                return c;
+              }
+            },
+            {
+              filter: 'div',
+              replacement: function(c) {
+                return '\n\n' + c + '\n\n';
+              }
+            },
+            {
+              filter: function (node) {
+                return node.nodeName === 'A' && !node.getAttribute('href');
+              },
+              replacement: function(c) {
+                return c;
               }
             }
             ]

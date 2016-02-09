@@ -15,9 +15,25 @@
     getHtml(tab, function(html) {
       read(html[0], function(err, article, meta) {
         if (! err) {
+          var markdown = toMarkdown(article.content, {
+            converters: [
+            {
+              filter: 'pre',
+              replacement: function(content) {
+                return '\n\n```\n' + content + '\n```\n\n';
+              }
+            },
+            {
+              filter: 'span',
+              replacement: function(content) {
+                return content;
+              }
+            }
+            ]
+          });
           saveToNv({
             title: article.title,
-            txt: tab.url + '\n\n' + toMarkdown(article.content)
+            txt: tab.url + '\n\n' + markdown
           });
         }
       });

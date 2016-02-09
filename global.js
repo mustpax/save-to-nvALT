@@ -15,7 +15,10 @@
     getHtml(tab, function(html) {
       read(html[0], function(err, article, meta) {
         if (! err) {
-          saveToNv({title: article.title, txt: toMarkdown(article.content)});
+          saveToNv({
+            title: article.title,
+            txt: tab.url + '\n\n' + toMarkdown(article.content)
+          });
         }
       });
     });

@@ -47,7 +47,7 @@
           });
           saveToNv({
             title: article.title,
-            txt: tab.url + '\n\n' + markdown
+            txt: 'Source: ' + tab.url + '\n\n' + markdown
           });
         }
       });
@@ -93,7 +93,7 @@
     "onclick": function(info, tab) {
       saveToNv({
         title: tab.title,
-        txt: info.pageUrl + '\n\n' + info.selectionText
+        txt: 'Source: '  + info.pageUrl + '\n\n' + info.selectionText
       });
     }
   });

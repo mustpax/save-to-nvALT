@@ -38,9 +38,12 @@
               }
             },
             {
-              filter: 'div',
+              filter: ['div', 'figure', 'canvas'],
               replacement: function(c) {
-                return '\n\n' + c + '\n\n';
+                if (read.trim(c)) {
+                  return '\n\n' + c + '\n\n';
+                }
+                return '\n\n';
               }
             },
             {

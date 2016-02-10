@@ -40,7 +40,7 @@
             {
               filter: ['div', 'figure', 'canvas'],
               replacement: function(c) {
-                if (read.trim(c)) {
+                if (c.trim()) {
                   return '\n\n' + c + '\n\n';
                 }
                 return '\n\n';

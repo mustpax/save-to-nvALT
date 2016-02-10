@@ -8,6 +8,7 @@ deps:
 
 clean:
 	-rm build.js pack.zip
+	-rm -rf node_modules/
 
 pack: clean all
 	zip pack.zip build.js *.png manifest.json

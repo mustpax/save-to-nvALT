@@ -27,8 +27,8 @@
             converters: [
             {
               filter: 'pre',
-              replacement: function(c) {
-                return '\n\n```\n' + c + '\n```\n\n';
+              replacement: function(c, node) {
+                return '\n\n```\n' + node.innerText + '\n```\n\n';
               }
             },
             {

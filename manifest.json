@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Save to nvALT",
   "version": "1.0",
-  "description": "Save pages to nvALT.",
+  "description": "Save pages to nvALT in clean Markdown. No fluff.",
   "permissions": [
     "contextMenus",
     "activeTab"

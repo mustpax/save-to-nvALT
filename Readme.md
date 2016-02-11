@@ -1,6 +1,6 @@
 # Chrome Extension: Save to nvALT
 
-**Save to nvALT** saves pages from Chrome to nvALT.
+**Save to nvALT** saves pages from Chrome to nvALT. Pages are saved in clean Markdown. No fluff.
 
 To use **Save to nvALT** you have to first [install nvALT][nvALT download].
 

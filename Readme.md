@@ -20,6 +20,11 @@ version of the original [Notational Velocity][nv].
 
 nvALT is developed by [David Halter][david] and [Brett Terpstra][brett].
 
+# Issues? Suggestions?
+
+* [Submit an issue or suggestion][submitissues]
+* [View issues and suggestions][issues]
+
 # Credits
 
 * **Save to nvALT** is based on [the original extension by David Halter][orig].
@@ -39,3 +44,5 @@ nvALT is developed by [David Halter][david] and [Brett Terpstra][brett].
 [nvALT download]: http://brettterpstra.com/projects/nvalt/#dl
 [to-markdown]: https://github.com/domchristie/to-markdown
 [node-read]: https://github.com/bndr/node-read
+[submitissues]: https://github.com/mustpax/save-to-nvALT/issues/new
+[issues]: https://github.com/mustpax/save-to-nvALT/issues

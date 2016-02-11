@@ -8,6 +8,8 @@ deps:
 
 clean:
 	-rm build.js pack.zip
+
+superclean: clean
 	-rm -rf node_modules/
 
 pack: clean all

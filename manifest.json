@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Save to nvALT",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Save pages to nvALT in clean Markdown. No fluff.",
   "permissions": [
     "contextMenus",

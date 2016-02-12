@@ -1,7 +1,7 @@
 {
   "name": "save-to-nvALT",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Mustafa Paksoy",
   "description": "Chrome extension for saving to nvALT via toolbar or context menu. Requires OS X and nvALT 2.1+.",
   "scripts" : {

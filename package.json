@@ -12,7 +12,7 @@
     "url": "git://github.com/mustpax/save-to-nvALT.git"
   },
   "dependencies": {
-    "node-read": "https://github.com/mustpax/node-read/tarball/master",
+    "node-read": "https://github.com/mustpax/node-read/tarball/29adabb54322ef67502b5376e58610539417392c",
     "to-markdown": "2.0.x"
   },
   "devDependencies": {
